@@ -12,18 +12,18 @@
 // ];
 
 // const benzina = automobili.filter(auto => {
-    
+
 //     return (auto.alimentazione === "Benzina")
-    
+
 // })
 
 // const diesel = automobili.filter(auto => {
-    
+
 //     return (auto.alimentazione === "Diesel")
 // })
 
 // const altreAlimentazioni = automobili.filter(auto => {
-      
+
 //     return (auto.alimentazione != "Benzina" && auto.alimentazione != "Diesel")
 // })
 
@@ -39,7 +39,10 @@ const nomi = ["pippo", "PLUTO", "Paperino"];
 console.log(nomi)
 
 const nomiCorretti = nomi.map(nome => {
-    return lettereMinuscole = nome.toLowerCase();
+    
+    const lettereMinuscole = nome.toLowerCase();
+
+    return lettereMinuscole.charAt(0).toUpperCase() + lettereMinuscole.slice(1);
 })
 
-console.log(nomiCorretti);
+    console.log(nomiCorretti)
