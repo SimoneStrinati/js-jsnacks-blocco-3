@@ -11,4 +11,22 @@ const automobili = [
   { marca: "Opel", modello: "Corsa", alimentazione: "Metano" }
 ];
 
+const benzina = automobili.filter(auto => {
+    
+    return (auto.alimentazione === "Benzina")
+    
+})
 
+const diesel = automobili.filter(auto => {
+    
+    return (auto.alimentazione === "Diesel")
+})
+
+const altreAlimentazioni = automobili.filter(auto => {
+      
+    return (auto.alimentazione != "Benzina" && auto.alimentazione != "Diesel")
+})
+
+console.log(benzina)
+console.log(diesel)
+console.log(altreAlimentazioni)
